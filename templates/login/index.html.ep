@@ -1,0 +1,7 @@
+% layout 'default';
+% title 'Login';
+<form id="login-form">
+  <input type="test" name="username" placeholder="Username"/><br/>
+  <input type="text" name="password" placeholder="Password"/><br/>
+  <input type="submit" value="Login"/>
+</form>

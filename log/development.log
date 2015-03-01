@@ -1,0 +1,138 @@
+[Sun Mar  1 23:24:07 2015] [info] Listening at "http://*:3000"
+[Sun Mar  1 23:24:10 2015] [debug] Your secret passphrase needs to be changed
+[Sun Mar  1 23:24:10 2015] [debug] GET "/"
+[Sun Mar  1 23:24:10 2015] [debug] Routing to controller "MojoExperiments::Controller::Example" and action "welcome"
+[Sun Mar  1 23:24:10 2015] [debug] Rendering template "example/welcome.html.ep"
+[Sun Mar  1 23:24:10 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sun Mar  1 23:24:10 2015] [debug] 200 OK (0.005418s, 184.570/s)
+[Sun Mar  1 23:24:14 2015] [debug] GET "/login"
+[Sun Mar  1 23:24:14 2015] [debug] Template "not_found.development.html.ep" not found
+[Sun Mar  1 23:24:14 2015] [debug] Template "not_found.html.ep" not found
+[Sun Mar  1 23:24:14 2015] [debug] Rendering inline template "64a586e608c51bbacaabb753ef57cd19"
+[Sun Mar  1 23:24:14 2015] [debug] Rendering inline template "4fd98d9d9f1277a81e232baec9ad5844"
+[Sun Mar  1 23:24:14 2015] [debug] 404 Not Found (0.028973s, 34.515/s)
+[Sun Mar  1 23:24:23 2015] [debug] GET "/join"
+[Sun Mar  1 23:24:23 2015] [error] Not enough arguments for join or string at (eval 265) line 1, at EOF
+
+[Sun Mar  1 23:24:23 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Mar  1 23:24:23 2015] [debug] Template "exception.html.ep" not found
+[Sun Mar  1 23:24:23 2015] [debug] Rendering inline template "64a586e608c51bbacaabb753ef57cd19"
+[Sun Mar  1 23:24:23 2015] [debug] Rendering inline template "4fd98d9d9f1277a81e232baec9ad5844"
+[Sun Mar  1 23:24:23 2015] [debug] 500 Internal Server Error (0.031099s, 32.155/s)
+[Sun Mar  1 23:24:59 2015] [info] Listening at "http://*:3000"
+[Sun Mar  1 23:25:01 2015] [debug] Your secret passphrase needs to be changed
+[Sun Mar  1 23:25:01 2015] [debug] GET "/join"
+[Sun Mar  1 23:25:01 2015] [debug] Template "not_found.development.html.ep" not found
+[Sun Mar  1 23:25:01 2015] [debug] Template "not_found.html.ep" not found
+[Sun Mar  1 23:25:01 2015] [debug] Rendering inline template "64a586e608c51bbacaabb753ef57cd19"
+[Sun Mar  1 23:25:01 2015] [debug] Rendering inline template "4fd98d9d9f1277a81e232baec9ad5844"
+[Sun Mar  1 23:25:01 2015] [debug] 404 Not Found (0.027738s, 36.052/s)
+[Sun Mar  1 23:25:14 2015] [debug] GET "/login"
+[Sun Mar  1 23:25:14 2015] [error] Invalid version format (non-numeric data) at lib/MojoExperiments/Controller/Login.pm line 2, near "package MojoExperiments::Controller::Login
+"
+"use" not allowed in expression at lib/MojoExperiments/Controller/Login.pm line 2, at end of line
+syntax error at lib/MojoExperiments/Controller/Login.pm line 2, near "package MojoExperiments::Controller::Login
+use Mojo::Base "
+syntax error at lib/MojoExperiments/Controller/Login.pm line 8, near "}"
+Compilation failed in require at (eval 262) line 1.
+
+[Sun Mar  1 23:25:14 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Mar  1 23:25:14 2015] [debug] Template "exception.html.ep" not found
+[Sun Mar  1 23:25:14 2015] [debug] Rendering inline template "64a586e608c51bbacaabb753ef57cd19"
+[Sun Mar  1 23:25:14 2015] [debug] Rendering inline template "4fd98d9d9f1277a81e232baec9ad5844"
+[Sun Mar  1 23:25:14 2015] [debug] 500 Internal Server Error (0.029002s, 34.480/s)
+[Sun Mar  1 23:25:56 2015] [debug] Your secret passphrase needs to be changed
+[Sun Mar  1 23:25:56 2015] [debug] GET "/"
+[Sun Mar  1 23:25:56 2015] [debug] Routing to controller "MojoExperiments::Controller::Example" and action "welcome"
+[Sun Mar  1 23:25:56 2015] [debug] Rendering template "example/welcome.html.ep"
+[Sun Mar  1 23:25:56 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sun Mar  1 23:25:56 2015] [debug] 200 OK (0.006158s, 162.390/s)
+[Sun Mar  1 23:25:56 2015] [debug] GET "/login"
+[Sun Mar  1 23:25:56 2015] [error] Invalid version format (non-numeric data) at lib/MojoExperiments/Controller/Login.pm line 2, near "package MojoExperiments::Controller::Login
+"
+"use" not allowed in expression at lib/MojoExperiments/Controller/Login.pm line 2, at end of line
+syntax error at lib/MojoExperiments/Controller/Login.pm line 2, near "package MojoExperiments::Controller::Login
+use Mojo::Base "
+Compilation failed in require at (eval 269) line 1.
+
+[Sun Mar  1 23:25:56 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Mar  1 23:25:56 2015] [debug] Template "exception.html.ep" not found
+[Sun Mar  1 23:25:56 2015] [debug] Rendering inline template "64a586e608c51bbacaabb753ef57cd19"
+[Sun Mar  1 23:25:56 2015] [debug] Rendering inline template "4fd98d9d9f1277a81e232baec9ad5844"
+[Sun Mar  1 23:25:56 2015] [debug] 500 Internal Server Error (0.024708s, 40.473/s)
+[Sun Mar  1 23:26:40 2015] [info] Listening at "http://*:3000"
+[Sun Mar  1 23:26:42 2015] [debug] Your secret passphrase needs to be changed
+[Sun Mar  1 23:26:42 2015] [debug] GET "/login"
+[Sun Mar  1 23:26:42 2015] [error] Invalid version format (non-numeric data) at lib/MojoExperiments/Controller/Login.pm line 2, near "package MojoExperiments::Controller::Login
+"
+"use" not allowed in expression at lib/MojoExperiments/Controller/Login.pm line 2, at end of line
+syntax error at lib/MojoExperiments/Controller/Login.pm line 2, near "package MojoExperiments::Controller::Login
+use Mojo::Base "
+Compilation failed in require at (eval 260) line 1.
+
+[Sun Mar  1 23:26:42 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Mar  1 23:26:42 2015] [debug] Template "exception.html.ep" not found
+[Sun Mar  1 23:26:42 2015] [debug] Rendering inline template "64a586e608c51bbacaabb753ef57cd19"
+[Sun Mar  1 23:26:42 2015] [debug] Rendering inline template "4fd98d9d9f1277a81e232baec9ad5844"
+[Sun Mar  1 23:26:42 2015] [debug] 500 Internal Server Error (0.033654s, 29.714/s)
+[Sun Mar  1 23:26:45 2015] [debug] GET "/login"
+[Sun Mar  1 23:26:45 2015] [error] Attempt to reload MojoExperiments/Controller/Login.pm aborted.
+Compilation failed in require at (eval 263) line 1.
+
+[Sun Mar  1 23:26:45 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Mar  1 23:26:45 2015] [debug] Template "exception.html.ep" not found
+[Sun Mar  1 23:26:45 2015] [debug] Rendering cached inline template "64a586e608c51bbacaabb753ef57cd19"
+[Sun Mar  1 23:26:45 2015] [debug] Rendering cached inline template "4fd98d9d9f1277a81e232baec9ad5844"
+[Sun Mar  1 23:26:45 2015] [debug] 500 Internal Server Error (0.008762s, 114.129/s)
+[Sun Mar  1 23:26:54 2015] [debug] GET "/login"
+[Sun Mar  1 23:26:54 2015] [error] Attempt to reload MojoExperiments/Controller/Login.pm aborted.
+Compilation failed in require at (eval 264) line 1.
+
+[Sun Mar  1 23:26:54 2015] [debug] Template "exception.development.html.ep" not found
+[Sun Mar  1 23:26:54 2015] [debug] Template "exception.html.ep" not found
+[Sun Mar  1 23:26:54 2015] [debug] Rendering cached inline template "64a586e608c51bbacaabb753ef57cd19"
+[Sun Mar  1 23:26:54 2015] [debug] Rendering cached inline template "4fd98d9d9f1277a81e232baec9ad5844"
+[Sun Mar  1 23:26:54 2015] [debug] 500 Internal Server Error (0.008374s, 119.417/s)
+[Sun Mar  1 23:27:21 2015] [debug] Your secret passphrase needs to be changed
+[Sun Mar  1 23:27:21 2015] [debug] GET "/"
+[Sun Mar  1 23:27:21 2015] [debug] Routing to controller "MojoExperiments::Controller::Example" and action "welcome"
+[Sun Mar  1 23:27:21 2015] [debug] Rendering template "example/welcome.html.ep"
+[Sun Mar  1 23:27:21 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sun Mar  1 23:27:21 2015] [debug] 200 OK (0.009039s, 110.632/s)
+[Sun Mar  1 23:27:21 2015] [debug] GET "/login"
+[Sun Mar  1 23:27:21 2015] [debug] Routing to controller "MojoExperiments::Controller::Login" and action "login"
+[Sun Mar  1 23:27:21 2015] [debug] Rendering template "login/login.html.ep"
+[Sun Mar  1 23:27:21 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sun Mar  1 23:27:21 2015] [debug] 200 OK (0.003941s, 253.743/s)
+[Sun Mar  1 23:27:28 2015] [info] Listening at "http://*:3000"
+[Sun Mar  1 23:27:30 2015] [debug] Your secret passphrase needs to be changed
+[Sun Mar  1 23:27:30 2015] [debug] GET "/login"
+[Sun Mar  1 23:27:30 2015] [debug] Routing to controller "MojoExperiments::Controller::Login" and action "login"
+[Sun Mar  1 23:27:30 2015] [debug] Rendering template "login/login.html.ep"
+[Sun Mar  1 23:27:30 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sun Mar  1 23:27:30 2015] [debug] 200 OK (0.005267s, 189.861/s)
+[Sun Mar  1 23:27:54 2015] [info] Listening at "http://*:3000"
+[Sun Mar  1 23:27:54 2015] [debug] Your secret passphrase needs to be changed
+[Sun Mar  1 23:27:54 2015] [debug] GET "/login"
+[Sun Mar  1 23:27:54 2015] [debug] Routing to controller "MojoExperiments::Controller::Login" and action "login"
+[Sun Mar  1 23:27:54 2015] [debug] Rendering template "login/login.html.ep"
+[Sun Mar  1 23:27:54 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sun Mar  1 23:27:54 2015] [debug] 200 OK (0.006872s, 145.518/s)
+[Sun Mar  1 23:31:11 2015] [debug] Your secret passphrase needs to be changed
+[Sun Mar  1 23:31:11 2015] [debug] GET "/"
+[Sun Mar  1 23:31:11 2015] [debug] Routing to controller "MojoExperiments::Controller::Example" and action "welcome"
+[Sun Mar  1 23:31:11 2015] [debug] Rendering template "example/welcome.html.ep"
+[Sun Mar  1 23:31:11 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sun Mar  1 23:31:11 2015] [debug] 200 OK (0.004718s, 211.954/s)
+[Sun Mar  1 23:31:11 2015] [debug] GET "/login"
+[Sun Mar  1 23:31:11 2015] [debug] Routing to controller "MojoExperiments::Controller::Login" and action "index"
+[Sun Mar  1 23:31:11 2015] [debug] Rendering template "login/index.html.ep"
+[Sun Mar  1 23:31:11 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sun Mar  1 23:31:11 2015] [debug] 200 OK (0.002421s, 413.052/s)
+[Sun Mar  1 23:31:14 2015] [info] Listening at "http://*:3000"
+[Sun Mar  1 23:31:18 2015] [debug] Your secret passphrase needs to be changed
+[Sun Mar  1 23:31:18 2015] [debug] GET "/login"
+[Sun Mar  1 23:31:18 2015] [debug] Routing to controller "MojoExperiments::Controller::Login" and action "index"
+[Sun Mar  1 23:31:18 2015] [debug] Rendering template "login/index.html.ep"
+[Sun Mar  1 23:31:18 2015] [debug] Rendering template "layouts/default.html.ep"
+[Sun Mar  1 23:31:18 2015] [debug] 200 OK (0.007560s, 132.275/s)
