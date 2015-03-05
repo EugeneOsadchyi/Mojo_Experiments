@@ -1,0 +1,44 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#logo {
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  float: left;
+  line-height: 40px;
+}
+
+/* footer */
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #e5e5e5;
+  color: gray;
+}
+
+footer a {
+  color: gray;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
