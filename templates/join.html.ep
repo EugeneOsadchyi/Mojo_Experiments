@@ -1,0 +1,4 @@
+% layout 'default';
+% title 'Join';
+% stash page_header => 'Join';
+

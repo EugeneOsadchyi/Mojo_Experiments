@@ -14,7 +14,8 @@ sub startup {
   # Normal route to controller
   $r->get('/')->to('example#welcome');
 
-  $r->get('/login')->to('login#index');
+  $r->get('/login')->to('login#handler');
+  $r->get('/join')->to('join#handler');
 }
 
 1;

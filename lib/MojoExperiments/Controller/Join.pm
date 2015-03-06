@@ -1,9 +1,9 @@
-package MojoExperiments::Controller::Login;
+package MojoExperiments::Controller::Join;
 use Mojo::Base 'Mojolicious::Controller';
 
 sub handler {
   my $self = shift;
-  $self->render(template => 'login');
+  $self->render(template => 'join');
 }
 
 1;

@@ -28,6 +28,7 @@
         </div>
       </header>
       <div class="container">
+        <h2><%= stash('page_header') %></h2>
         <%= content %>
         <footer class="footer">
           <small><%= link_to 'Mojolicious Experiments' => '/' %></small>

@@ -1,5 +1,7 @@
 % layout 'default';
 % title 'Login';
+% stash page_header => 'Login';
+
 <form class="form-horizontal" id="login-form">
   <div class="form-group">
     <label class="col-sm-2 control-label" for="username">Username</label>
@@ -16,7 +18,7 @@
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
       <button type="submit" class="btn btn-primary">Login</button>
-      <a href='#' class='btn btn-default'>Sign up</a>
+      <%= link_to 'Join' => 'join' => (class => 'btn btn-default') %>
     </div>
   </div>
 </form>
