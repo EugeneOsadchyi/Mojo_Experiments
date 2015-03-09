@@ -1,0 +1,20 @@
+{
+  "debug": "1",
+  "render" : {
+    "profile": {
+      "First name":     { "type": "text", "name": "first_name"    },
+      "Last name":      { "type": "text", "name": "last_name"     },
+      "Date of birth":  { "type": "date", "name": "date_of_birth" }
+    },
+    "survey": {
+      "У тебя хорошее настроение?": {
+        "type": "checkbox",
+        "name": "mood"
+      },
+      "Расскажи о себе": {
+        "type": "text",
+        "name": "about"
+      }
+    }
+  }
+}

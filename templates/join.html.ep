@@ -1,4 +1,35 @@
-% layout 'default';
-% title 'Join';
-% stash page_header => 'Join';
+% layout 'default', title 'Join';
 
+% my $profile = $template_args->{render}->{profile};
+
+% if ($template_args->{errors}) {
+  User already exists in the data base
+% }
+
+%= form_for join => (class => 'form-horizontal') => (method => 'POST') => begin
+  %= t div => (class => "form-group") => begin
+    %= label_for email => 'Email' => (class => "col-sm-2 control-label")
+    %= t div => (class => "col-sm-10") => begin
+      %= email_field 'email' => (class => "form-control", placeholder => "Email")
+    % end
+  % end
+  %= t div => (class => "form-group") => begin
+    %= label_for password => 'Password' => (class => "col-sm-2 control-label")
+    %= t div => (class => "col-sm-10") => begin
+      %= password_field 'password' => (class => "form-control", placeholder => "Password")
+    % end
+  % end
+  % foreach my $item (keys %$profile) {
+    %= t div => (class => "form-group") => begin
+      %= label_for first_name => "$item" => (class => "col-sm-2 control-label")
+      %= t div => (class => "col-sm-10") => begin
+        <input type="<%= $profile->{$item}->{type} %>" name="<%= $profile->{$item}->{name} %>" class="form-control" placeholder="<%= $item %>">
+      % end
+    % end
+  % }
+  %= t div => (class => "form-group") => begin
+    %= t div => (class => "col-sm-offset-2 col-sm-10") => begin
+      %= submit_button 'Register' => (class => "btn btn-default")
+    % end
+  % end
+% end

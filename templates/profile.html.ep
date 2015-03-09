@@ -1,0 +1,19 @@
+% layout 'default', title 'My Profile';
+
+% my %survey = %{app->config->{survey}};
+% my $template_args = stash('template_data');
+
+% if(scalar keys %survey > 0) {
+  <form class="form-horizontal">
+  <input type="hidden" name="email" value="">
+  % foreach my $item (keys %survey) {
+  <div class="form-group">
+    <label for="<%= $survey{$item}{name} %>"><%= $item %></label>
+    <input type='<%= $survey{$item}{type} %>'>
+  </div>
+  % }
+  <div class="form-group">
+    <input type="submit" class="btn btn-primary" value="Save">
+  </div>
+% }
+</form>
