@@ -1,6 +1,12 @@
 % layout 'default', title 'Login';
-<div id="result" style="display:none">Success</div>
-%= form_for login => (class => 'form-signin', id => 'form-signin') => begin
+
+% if (my $msg = flash('message')) {
+  <div class="margin-10 alert alert-success" role="alert">
+    <b><%= $msg %></b></br>
+  </div>
+% }
+
+%= form_for login_index => (class => 'form-signin', id => 'form-signin') => begin
   <h2 class="form-signin-heading">Please sign in</h2>
   %= label_for email => 'Email' => (class => "sr-only")
   %= email_field 'email' => (class => "form-control", placeholder => "Email", required => "", autofocus => "")

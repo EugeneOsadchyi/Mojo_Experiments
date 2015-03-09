@@ -2,21 +2,23 @@
 
 % my $profile = $template_args->{render}->{profile};
 
-% if ($template_args->{errors}) {
-  User already exists in the data base
+% if (my $msg = flash('message')) {
+  <div class="margin-10 alert alert-warning" role="alert">
+    <%= $msg %>
+  </div>
 % }
 
-%= form_for join => (class => 'form-horizontal') => (method => 'POST') => begin
+%= form_for join => (class => 'form-edit form-horizontal') => (method => 'POST') => begin
   %= t div => (class => "form-group") => begin
     %= label_for email => 'Email' => (class => "col-sm-2 control-label")
     %= t div => (class => "col-sm-10") => begin
-      %= email_field 'email' => (class => "form-control", placeholder => "Email")
+      %= email_field 'email' => (class => "form-control", placeholder => "Email", required => '')
     % end
   % end
   %= t div => (class => "form-group") => begin
     %= label_for password => 'Password' => (class => "col-sm-2 control-label")
     %= t div => (class => "col-sm-10") => begin
-      %= password_field 'password' => (class => "form-control", placeholder => "Password")
+      %= password_field 'password' => (class => "form-control", placeholder => "Password", required => '')
     % end
   % end
   % foreach my $item (keys %$profile) {
@@ -29,7 +31,7 @@
   % }
   %= t div => (class => "form-group") => begin
     %= t div => (class => "col-sm-offset-2 col-sm-10") => begin
-      %= submit_button 'Register' => (class => "btn btn-default")
+      %= submit_button 'Register' => (class => "btn btn-primary")
     % end
   % end
 % end

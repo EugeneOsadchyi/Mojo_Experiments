@@ -1,27 +1,45 @@
 package MojoExperiments::Controller::Login;
 use Mojo::Base 'Mojolicious::Controller';
 
-use Mojo::JSON qw(decode_json encode_json);
+use Data::Dumper;
 
-sub display_login {
+sub index {
   my $self = shift;
 
-  $self->render(template => 'login');
+  my $email = $self->param('email')     || '';
+  my $pass  = $self->param('password')  || '';
+
+  return $self->render unless $self->check_user($email, $pass);
+
+  $self->signed_cookie(user => $email);
+  $self->flash(message => "You are successfully logged in.");
+  $self->redirect_to('profile');
 }
 
-sub process_login {
+sub logged_in {
   my $self = shift;
-warn(Data::Dumper::Dumper($self->req->params));
-  my $user = $self->param('email') || '';
-  my $pass = $self->param('password') || '';
+  return 1 if $self->signed_cookie('user');
+  $self->redirect_to('login_index');
+  return undef;
+}
+
+sub logout {
+  my $self = shift;
+  $self->signed_cookie('user' => '', { expires => 1 });
+  $self->redirect_to('login_index');
+}
+
+####### Utils
+
+sub check_user {
+  my $self = shift;
+  my ($email, $pass) = @_;
 
   my $session = $self->session('users');
 
-  if ($session->{$user} && $session->{$user}->{password} eq $pass) {
-    $self->render(template => 'profile');
-  } else {
-    $self->render(text => 'User not found');
-  }
+  return 1 if ($session->{$email} && $session->{$email}->{profile}->{password} eq $pass);
+
+  return 0;
 }
 
 1;

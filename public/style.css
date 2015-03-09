@@ -14,25 +14,14 @@ body {
   line-height: 40px;
 }
 
-/* footer */
-footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.margin-10 {
+  margin: 10px;
 }
 
-footer small {
-  float: left;
-}
-
-footer ul {
-  float: right;
-  list-style: none;
-}
-
-footer ul li {
-  float: left;
-  margin-left: 10px;
+/* join, profile */
+.form-edit {
+  padding: 15px;
+  margin: 0 auto;
 }
 
 /* login */

@@ -1,28 +1,24 @@
 package MojoExperiments::Controller::Join;
 use Mojo::Base 'Mojolicious::Controller';
-use MojoExperiments::Model::Users;
-
-use Mojo::JSON qw(decode_json encode_json);
 
 use Data::Dumper;
 
-use constant DEBUG => 1;
+use constant DEBUG => 0;
 
 sub display_join {
   my $self = shift;
-  my $template_data = {};
+  my $data = {};
 
   my $config = $self->app->config;
 
-  $template_data->{render} = $config->{render};
+  $data->{render} = $config->{render};
 
-  $self->stash(template_args => $template_data);
+  $self->stash(template_args => $data);
   $self->render(template => 'join');
 }
 
 sub create_user {
   my $self = shift;
-  my $template_data = {};
 
   my %form_args = @{$self->req->params->params};
 
@@ -32,15 +28,13 @@ sub create_user {
   if (is_new_user($users, %form_args)) {
     $self->add_new_user($users, %form_args);
     $self->flash(message => 'Sucessfully registred new user');
-    $self->redirect_to('/login');
+    $self->redirect_to('login');
 
     return;
   }
 
-$template_data->{errors} = 1;
-
-  $self->stash(template_args => $template_data);
-    $self->redirect_to('/join');
+  $self->flash(message => 'User already exists');
+  $self->redirect_to('join');
 }
 
 sub get_users_from_session {

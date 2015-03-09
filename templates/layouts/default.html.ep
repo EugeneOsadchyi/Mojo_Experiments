@@ -21,19 +21,19 @@
           <nav>
             <ul class="nav nav-pills pull-right">
               <li><%= link_to 'Home' => '/' %></li>
+              % if ($controller eq 'profile') {
+              <li><%= link_to 'Logout' => 'logout' %></li>
+              % } else {
               <li><%= link_to 'Sign In' => 'login' %></li>
+              % }
           </nav>
           <h3 class="text-muted">Mojolicious Experiments</h3>
       </header>
       <div class="container">
+        % if (stash('logged_in')) {
+          %= link_to Logout => 'logout'
+        % end
         <%= content %>
-        <footer class="footer">
-          <nav>
-            <ul>
-              <li><%= link_to 'Home' => '/' %></li>
-            </ul>
-          </nav>
-        </footer>
       </div>
     </div>
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
